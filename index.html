@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="gr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +11,28 @@
   />
   <link
     href="https://fonts.googleapis.com/css2?family=Castoro&family=Girassol&display=swap" rel="stylesheet"
-    rel="stylesheet"
   />
   <link rel="stylesheet" href="./css/styles.css" />
+  <header class="header">
+      <div class="container">
+          <nav class="nav-list link">
+              <ul class="header-items list">
+                  <li class="header-element">
+                      <a class="header-item link" href="#info">ΠΛΗΡΟΦΟΡΙΕΣ</a>
+                  </li>
+                <li class="header-element">
+                    <a class="header-item link" href="#activity">ΔΡΑΣΤΗΡΙΟΤΗΤΕΣ</a>
+                </li>
+                <li class="header-element">
+                    <a class="header-item link" href="#publishings">ΔΗΜΟΣΙΕΥΣΕΙΣ</a>
+                </li>
+                <li class="header-element">
+                    <a class="header-item link" href="#contacts">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+                </li>
+              </ul>
+          </nav>
+      </div>
+  </header>
 </head>
 <body>
     <!--HEADER-->
@@ -28,7 +47,8 @@
 <!-- INFO SECTION 1-->
 <section class="info container"> 
     <div class="info-section">
-    <ul class="info-list list"><b>ΠΛΗΡΟΦΟΡΙΕΣ ΤΗΣ ΕΤΑΙΡΕΙΑΣ</b>
+    <ul class="info-list list" id="info">
+        <li class="info-title">ΠΛΗΡΟΦΟΡΙΕΣ ΤΗΣ ΕΤΑΙΡΕΙΑΣ</li>
 <li class="info-item">ΑΦΜ: 801 396 303</li>
 <li>ΑΡ. ΓΕΜΗ: 155 912 119 000</li>
 <li>ΗΜΕΡΟΜΗΝΙΑ ΣΥΣΤΑΣΗΣ: 12/8/2020</li>
@@ -44,25 +64,24 @@
 </ul>
 </div>
 <div class="second-column">
-<ul class="activity list">
-<li class="activity-title"><b>ΔΡΑΣΤΗΡΙΟΤΗΤΕΣ ΤΗΣ ΕΤΑΙΡΕΙΑΣ</b>
+<ul class="activity list" id="activity">
+<li class="activity-title">
+    <b>ΔΡΑΣΤΗΡΙΟΤΗΤΕΣ ΤΗΣ ΕΤΑΙΡΕΙΑΣ</b>
 </li>
 <li>ΚΑΔ: 64 201 000 και 70 220 000</li>
 <li lang="en">Συμβουλευτικές Υπηρεσίες</li>
 </ul>
-<ul class="publishings list">
-<b>ΔΗΜΟΣΙΕΥΣΕΙΣ</b>
+<ul class="publishings list" id="publishings">
+<li>ΔΗΜΟΣΙΕΥΣΕΙΣ</li>
 <li class="publishings-item">Καμία Δημοσίευση</li>
 </ul>
 </div>
-
-</section>
-
-    
+</section> 
 
 <!--FOOTER-->
 <footer class="contacts container">
-    <ul class="contacts-list list"><h3 class="contacts-title">ΕΠΙΚΟΙΝΩΝΙΑ</h3>
+    <ul class="contacts-list list" id="contacts">
+        <li class="contacts-title">ΕΠΙΚΟΙΝΩΝΙΑ</li>
         <li class="contact-details">ΤΗΛΕΦΩΝΟ: +30 ... </li>
         <li class="contact-details">EMAIL:</li>
         <li class="contact-details">ΔΙΑΧΕΙΡΙΣΤΗΣ: Κύριλλος Ακριτίδης</li>
