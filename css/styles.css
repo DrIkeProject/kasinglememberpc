@@ -7,7 +7,8 @@
   --black-color: #000000;
   --title-text-color: #212121;
   --primary-text-color: #757575;
-  --accent-color: rgba(131, 113, 53, 0.829);
+  --accent-color: rgba(145, 123, 51, 0.829);
+  --lighter-accent-color: rgba(155, 128, 41, 0.829);
 }
 *,
 *::before,
@@ -56,19 +57,26 @@ img {
 }
 
 /*==== HEADER ===*/
-
 .header {
   display: flex;
   align-items: baseline;
   background-color: var(--accent-color);
+  border: 1px solid var(--black-color);
+}
+.header:hover,
+.header:focus {
+  background-color: var(--lighter-accent-color);
+  transition: var(--lighter-accent-color) 500ms linear;
+  opacity: 1;
 }
 .header-item {
   color: var(--black-color);
-
-  font-weight: 550;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
   line-height: 1.142;
   letter-spacing: 0.02em;
-  transition: var(--accent-color) 250ms linear;
+  transition: var(--accent-color) 500ms linear;
 }
 .header-item:active {
   color: var(--accent-color);
@@ -76,6 +84,18 @@ img {
 .header-element {
   display: flex;
   margin-right: 50px;
+  animation-duration: 2000ms;
+  text-decoration: none;
+}
+.header-element:first-child {
+  margin-right: 200px;
+  margin-left: 50px;
+  font-size: 18px;
+  color: var(--black-color);
+  font-family: "Piazzolla", serif;
+}
+.header-element:first-child:hover {
+  color: var(--white-color);
 }
 .header-element:not(last-child) {
   margin-right: 50px;
@@ -89,7 +109,6 @@ img {
   align-items: flex-end;
   margin-top: 15px;
   margin-bottom: 15px;
-  margin-left: 580px;
 }
 /*==== HERO ====*/
 
@@ -102,6 +121,7 @@ img {
 
   background-size: cover;
   background-position: center;
+  border-bottom: 1px solid var(--black-color);
 }
 .hero .container {
   text-align: center;
@@ -159,6 +179,7 @@ img {
 /*===FOOTER===*/
 .contacts {
   background-color: var(--accent-color);
+  border: 1px solid var(--black-color);
   padding-bottom: 30px;
   padding-left: 30px;
   margin: 10px;
@@ -176,4 +197,11 @@ img {
   color: var(--black-color);
   font-weight: 400;
   letter-spacing: 0.03em;
+}
+.copyright {
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: rgb(65, 62, 62);
 }
