@@ -24,7 +24,6 @@ body {
   color: var(--black-color);
 }
 .container {
-  display: flex;
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -137,16 +136,14 @@ img {
   background-size: cover;
   background-position: center;
   border-bottom: 1px solid var(--black-color);
-}
-.hero .container {
   text-align: center;
 }
 /*===INFO SECTION===*/
-.info {
+.info .container {
+  display: flex;
   padding-top: 30px;
-  padding-left: 30px;
+  padding-left: 50px;
   border: 1.5px solid var(--accent-color);
-  margin: 0 auto;
   margin-top: 20px;
 }
 .info-list {
@@ -193,12 +190,12 @@ img {
 }
 
 /*===FOOTER===*/
-.contacts {
+.contacts .container {
+  display: flex;
   background-color: var(--accent-color);
   border: 1px solid var(--black-color);
   padding-bottom: 30px;
-  padding-left: 30px;
-  margin: 0 auto;
+  padding-left: 50px;
   margin-top: 20px;
 }
 .contacts-title {
@@ -217,8 +214,8 @@ img {
 }
 .copyright {
   display: flex;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
   color: rgb(65, 62, 62);
 }
