@@ -32,21 +32,7 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-@media (max-width: 1200px) {
-  .container {
-    max-width: 970px;
-  }
-}
-@media (max-width: 992px) {
-  .container {
-    max-width: 7500px;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    max-width: none;
-  }
-}
+
 .section {
   width: 100%;
   padding-bottom: 50px;
@@ -75,7 +61,7 @@ img {
 }
 /*=== LOGO ===*/
 .logo {
-  margin: 10px 180px 10px 70px;
+  margin: 10px 180px 10px 30px;
   flex: 0 0 50px;
   border-radius: 50%;
   overflow: hidden;
@@ -136,7 +122,46 @@ img {
 .header-element:not(last-child) {
   margin-right: 50px;
 }
+.image {
+  min-width: 100%;
+}
+/*=== BURGER MENU */
+.header-burger {
+  display: none;
+  background: none;
+  padding: 9px 2px;
+  border: 0;
+  cursor: pointer;
+}
+.burger-menu {
+  display: block;
+  align-items: flex-end;
+  width: 30px;
+  height: 3px;
+  background-color: var(--black-color);
 
+  font-size: 0;
+  color: transparent;
+
+  position: relative;
+}
+.burger-menu:before,
+.burger-menu:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  background-color: var(--black-color);
+}
+.burger-menu:before {
+  top: -8px;
+}
+.burger-menu:after {
+  bottom: -8px;
+}
 /*==== HERO ====*/
 
 .hero {
@@ -169,7 +194,6 @@ img {
 }
 .info-title {
   font-weight: 600;
-  font-style: bold;
   text-transform: uppercase;
 }
 .info-section {
@@ -232,4 +256,24 @@ img {
   padding-top: 15px;
   padding-bottom: 20px;
   color: rgb(65, 62, 62);
+}
+/*=== MEDIA ====*/
+@media (max-width: 1200px) {
+}
+@media (max-width: 991px) {
+  .nav-list {
+    display: none;
+  }
+  .header-burger {
+    display: block;
+    margin-left: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .nav-list {
+    display: none;
+  }
+  .header-burger {
+    display: block;
+  }
 }
