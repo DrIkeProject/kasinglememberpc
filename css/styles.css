@@ -113,7 +113,7 @@ img {
   line-height: 1.142;
   letter-spacing: 0.02em;
   transition: var(--white-color) 500ms linear;
-  padding-top: 25px;
+  padding-top: 15px;
   cursor: pointer;
 }
 .header-item:hover,
