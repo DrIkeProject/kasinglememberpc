@@ -4,7 +4,7 @@
   --main-font: "Castoro", serif;
   /* Colors */
   --white-color: #ffffff;
-  --black-color: #000000;
+  --black-color: #1d1c1c;
   --title-text-color: #212121;
   --primary-text-color: #757575;
   --accent-color: rgba(145, 123, 51, 0.829);
@@ -15,8 +15,12 @@
 *::after {
   margin: 0;
   padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
+html,
 body {
+  height: 100%;
   background-color: var(--white-color);
   font-family: var(--main-font);
   font-size: 14px;
@@ -69,50 +73,48 @@ img {
   width: 1px !important;
   overflow: hidden;
 }
+/*=== LOGO ===*/
+.logo {
+  margin: 10px 180px 10px 70px;
+  flex: 0 0 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  animation-duration: 10s;
+  animation-iteration-count: 10;
+}
 
 /*==== HEADER ===*/
 .header {
-  display: flex;
-  align-items: baseline;
-  background-color: var(--accent-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
   border: 1px solid var(--black-color);
 }
-.header:hover,
-.header:focus {
-  background-color: var(--lighter-accent-color);
-  transition: var(--lighter-accent-color) 500ms linear;
-  opacity: 1;
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+}
+.nav-list {
+  display: flex;
+  position: relative;
+  z-index: 2;
 }
 .header-item {
+  display: block;
   color: var(--black-color);
-  display: flex;
-  align-items: center;
   font-weight: 500;
   line-height: 1.142;
   letter-spacing: 0.02em;
-  transition: var(--accent-color) 500ms linear;
-}
-.header-item:active {
-  color: var(--accent-color);
-}
-.header-element {
-  display: flex;
-  margin-right: 50px;
-  animation-duration: 2000ms;
-  text-decoration: none;
-}
-.header-element:first-child {
-  margin-right: 160px;
-  margin-left: 50px;
-  font-size: 18px;
-  color: var(--black-color);
-  font-family: "Piazzolla", serif;
-}
-.header-element:first-child:hover {
-  color: var(--white-color);
-}
-.header-element:not(last-child) {
-  margin-right: 50px;
+  transition: var(--white-color) 500ms linear;
+  padding-top: 25px;
+  cursor: pointer;
 }
 .header-item:hover,
 .header-item:focus {
@@ -120,16 +122,28 @@ img {
 }
 .header-items {
   display: flex;
-  align-items: flex-end;
   margin-top: 15px;
   margin-bottom: 15px;
 }
+.header-body {
+  display: flex;
+}
+.header-element {
+  display: flex;
+  margin-right: 50px;
+  text-decoration: none;
+}
+.header-element:not(last-child) {
+  margin-right: 50px;
+}
+
 /*==== HERO ====*/
 
 .hero {
+  padding-top: 50px;
   margin: 0 auto;
   max-width: 1600px;
-  height: 650px;
+  height: 700px;
   background-image: url("../img/img5.jpg");
   background-repeat: no-repeat;
 
