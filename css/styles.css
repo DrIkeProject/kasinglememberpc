@@ -127,8 +127,6 @@ img {
 }
 .nav-list {
   display: flex;
-  position: relative;
-  z-index: 2;
   background-color: var(--accent-color);
 }
 .header-items {
@@ -243,8 +241,9 @@ img {
   }
 }
 @media (max-width: 767px) {
-  .nav-list {
-    display: none;
+  .header-items {
+    width: 100%;
+    font-size: 18px;
   }
   .header-body {
     position: relative;
@@ -255,6 +254,7 @@ img {
   .header-items {
     display: block;
   }
+
   .header-items li {
     margin: 0px 0px 20px 0px;
   }
@@ -299,8 +299,9 @@ img {
     height: 100%;
     background-color: var(--accent-color);
     z-index: 3;
-    padding: 70px 10px 20px 10px;
+    padding: 70px 10px 20px 20px;
   }
+
   .logo {
     flex: 0 0 40px;
     margin-left: -5px;
@@ -308,9 +309,7 @@ img {
   .hero {
     width: 100%;
   }
-  .nav-list {
-    display: none;
-  }
+
   .info-section {
     width: 100%;
     margin-left: -30px;
