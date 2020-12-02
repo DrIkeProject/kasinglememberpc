@@ -29,6 +29,7 @@ body {
 }
 .container {
   max-width: 1200px;
+  height: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -134,18 +135,16 @@ img {
 
 /*==== HERO ====*/
 
-.hero {
+.hero img {
   display: flex;
-  flex-wrap: wrap;
   padding-top: 50px;
-  margin: 0 auto;
-  max-width: 1600px;
-  height: 700px;
-  background-image: url("../img/img5.jpg");
-  background-repeat: no-repeat;
 
+  max-width: 1600px;
+  height: 900px;
+
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   border-bottom: 1px solid var(--black-color);
   text-align: center;
 }
@@ -224,12 +223,26 @@ img {
   color: rgb(65, 62, 62);
 }
 /*=== MEDIA ====*/
+@media (max-width: 1200px) {
+  .header-body {
+    width: 100%;
+  }
+}
 @media (max-width: 991px) {
   .header-body {
-    min-width: 100%;
+    width: 100%;
   }
   .image {
     min-width: 100%;
+  }
+  .logo {
+    border-radius: 50%;
+    overflow: hidden;
+    animation-duration: 20s;
+    animation-iteration-count: 10;
+    position: relative;
+    z-index: 3;
+    margin-left: -5px;
   }
 }
 @media (max-width: 767px) {
@@ -242,6 +255,7 @@ img {
     width: 100%;
     font-size: 10px;
     padding-top: 0px;
+    margin-left: 0px;
   }
   .header:before {
     height: 90px;
@@ -249,15 +263,44 @@ img {
   }
   .logo {
     margin: 20px 10px 10px 750px;
-    flex: 0 0 50px;
+    flex: 0 0 40px;
     border-radius: 50%;
     overflow: hidden;
     animation-duration: 20s;
     animation-iteration-count: 10;
     position: relative;
     z-index: 3;
+    margin-left: -5px;
   }
-  /*
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .info-section {
+    width: 100%;
+    margin-left: -30px;
+  }
+  .second-column {
+    width: 100%;
+    margin-left: -30px;
+  }
+  .activity {
+    width: 100%;
+  }
+  .publishings {
+    width: 100%;
+    margin-left: -30px;
+  }
+  .contacts {
+    min-width: 100%;
+    margin-left: -30px;
+  }
+  .copyright {
+    width: 100%;
+  }
+}
+/*
   .header-body {
     position: relative;
     z-index: 2;
@@ -314,34 +357,3 @@ img {
     padding: 70px 10px 20px 20px;
   }
 */
-  .logo {
-    flex: 0 0 40px;
-    margin-left: -5px;
-  }
-  .hero {
-    width: 100%;
-  }
-
-  .info-section {
-    width: 100%;
-    margin-left: -30px;
-  }
-  .second-column {
-    width: 100%;
-    margin-left: -30px;
-  }
-  .activity {
-    width: 100%;
-  }
-  .publishings {
-    width: 100%;
-    margin-left: -30px;
-  }
-  .contacts {
-    min-width: 100%;
-    margin-left: -30px;
-  }
-  .copyright {
-    width: 100%;
-  }
-}
