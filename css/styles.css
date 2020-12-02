@@ -61,11 +61,11 @@ img {
 }
 /*=== LOGO ===*/
 .logo {
-  margin: 10px 180px 10px 30px;
+  margin: 10px 180px 10px 0px;
   flex: 0 0 50px;
   border-radius: 50%;
   overflow: hidden;
-  animation-duration: 10s;
+  animation-duration: 20s;
   animation-iteration-count: 10;
   position: relative;
   z-index: 3;
@@ -114,8 +114,11 @@ img {
 }
 .header-items {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 15px;
   margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
 }
 .header-element {
   display: flex;
@@ -127,17 +130,6 @@ img {
 }
 .nav-list {
   display: flex;
-  background-color: var(--accent-color);
-}
-.header-items {
-  display: flex;
-  position: relative;
-  z-index: 2;
-  background-color: var(--accent-color);
-}
-/*=== BURGER MENU ====*/
-.header-burger {
-  display: none;
 }
 
 /*==== HERO ====*/
@@ -241,10 +233,31 @@ img {
   }
 }
 @media (max-width: 767px) {
-  .header-items {
-    width: 100%;
-    font-size: 18px;
+  .header {
+    height: 90px;
+    border-bottom: 1px solid var(--black-color);
   }
+  .header-items {
+    display: flex;
+    width: 100%;
+    font-size: 10px;
+    padding-top: 0px;
+  }
+  .header:before {
+    height: 90px;
+    border-bottom: 1px solid var(--black-color);
+  }
+  .logo {
+    margin: 20px 10px 10px 750px;
+    flex: 0 0 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    animation-duration: 20s;
+    animation-iteration-count: 10;
+    position: relative;
+    z-index: 3;
+  }
+  /*
   .header-body {
     position: relative;
     z-index: 2;
@@ -254,7 +267,6 @@ img {
   .header-items {
     display: block;
   }
-
   .header-items li {
     margin: 0px 0px 20px 0px;
   }
@@ -301,7 +313,7 @@ img {
     z-index: 3;
     padding: 70px 10px 20px 20px;
   }
-
+*/
   .logo {
     flex: 0 0 40px;
     margin-left: -5px;
