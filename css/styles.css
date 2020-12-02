@@ -247,7 +247,7 @@ img {
 }
 @media (max-width: 767px) {
   .header {
-    height: 90px;
+    height: 80px;
   }
   .header-items {
     min-width: 100%;
@@ -255,7 +255,7 @@ img {
     margin-left: 25px;
   }
   .header:before {
-    height: 90px;
+    height: 80px;
     border-bottom: 1px solid var(--black-color);
   }
   .logo {
