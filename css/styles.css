@@ -248,21 +248,18 @@ img {
 @media (max-width: 767px) {
   .header {
     height: 90px;
-    border-bottom: 1px solid var(--black-color);
   }
   .header-items {
-    display: flex;
-    width: 100%;
+    min-width: 100%;
     font-size: 10px;
-    padding-top: 0px;
-    margin-left: 0px;
+    margin-left: 25px;
   }
   .header:before {
     height: 90px;
     border-bottom: 1px solid var(--black-color);
   }
   .logo {
-    margin: 20px 10px 10px 750px;
+    margin: 20px 10px 10px 375px;
     flex: 0 0 40px;
     border-radius: 50%;
     overflow: hidden;
@@ -270,7 +267,7 @@ img {
     animation-iteration-count: 10;
     position: relative;
     z-index: 3;
-    margin-left: -5px;
+    margin-left: 0px;
   }
   .hero img {
     display: block;
