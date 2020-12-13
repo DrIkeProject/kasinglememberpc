@@ -5,6 +5,7 @@
   /* Colors */
   --white-color: #ffffff;
   --black-color: #1d1c1c;
+  --background-color: #f1f0e3;
   --title-text-color: #212121;
   --primary-text-color: #757575;
   --accent-color: rgba(145, 123, 51, 0.829);
@@ -21,7 +22,7 @@
 html,
 body {
   height: 100%;
-  background-color: var(--white-color);
+  background-color: var(--background-color);
   font-family: var(--main-font);
   font-size: 14px;
   font-style: normal;
@@ -138,8 +139,8 @@ img {
   display: flex;
   padding-top: 50px;
 
-  max-width: 1600px;
-  height: 900px;
+  max-width: 1400px;
+  height: auto;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -318,6 +319,7 @@ img {
   }
   .public-image {
     width: 100%;
+    align-items: center;
   }
 }
 /*
