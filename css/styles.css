@@ -47,7 +47,6 @@ body {
 img {
   display: block;
   width: 100%;
-  height: auto;
 }
 .visually-hidden {
   position: absolute !important;
@@ -139,7 +138,7 @@ img {
   display: flex;
   padding-top: 50px;
 
-  max-width: 1400px;
+  max-width: 1300px;
   height: auto;
 
   background-repeat: no-repeat;
